@@ -1,0 +1,83 @@
+*, ::after,::before{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(19, 19, 19);
+}
+
+.payaso{
+    width: 200px;
+    height: 180px;
+    border: 6px solid;
+    border-radius: 50%;
+    border-color: rgb(0, 0, 0);
+    margin: 100px;
+
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cabello{
+    width: 80px;
+    height: 80px;
+    background-color: rgb(203, 52, 52);
+    border-radius: 50%;
+    position: absolute;/**/
+    top: -30px;
+    left: 1;
+    
+    z-index: -1; 
+
+    box-shadow: 90px 0 rgb(226, 18, 18),  -90px 0 rgb(255, 14, 14);
+    /* con , hago otro box shadow*/
+}
+
+.ojo{
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    background-color: black;
+    border-radius: 50%;
+    top: 30px;
+    left: 25px;
+}
+.ojo-d{
+    left: initial;
+    right: 25px;
+}
+.pupila{
+    width: 28px;
+    height: 28px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 3px;
+    right: 4px;
+
+    box-shadow: -15px 20px 10px -8px white;
+}
+.nariz{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(143, 6, 6);
+    border-radius: 50%;
+    position: relative;
+    top: 20px;
+}
+
+.nariz::after{
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 20px;
+    border: 6px solid black;
+    top: 50px;
+    left: -14px;
+    border-radius: 0 0 18px 18px;
+    border-top: transparent;
+}
